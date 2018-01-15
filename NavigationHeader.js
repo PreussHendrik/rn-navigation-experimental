@@ -46,6 +46,7 @@ const {
   Platform,
   StyleSheet,
   View,
+  ViewPropTypes
 } = ReactNative;
 
 import type  {
@@ -115,7 +116,7 @@ class NavigationHeader extends React.Component<DefaultProps, Props, any> {
     renderLeftComponent: PropTypes.func,
     renderRightComponent: PropTypes.func,
     renderTitleComponent: PropTypes.func,
-    style: View.propTypes.style,
+    style: ViewPropTypes.style,
     statusBarHeight: PropTypes.number,
     viewProps: PropTypes.shape(View.propTypes),
   };

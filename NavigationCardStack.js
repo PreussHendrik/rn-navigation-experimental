@@ -41,7 +41,7 @@ const NavigationTransitioner = require('./NavigationTransitioner');
 const React = require('react');
 const PropTypes = require('prop-types');
 
-const { StyleSheet, View } = require('react-native');
+const { StyleSheet, View, ViewPropTypes } = require('react-native');
 
 const {Directions} = NavigationCardStackPanResponder;
 
@@ -131,7 +131,7 @@ class NavigationCardStack extends React.Component<DefaultProps, Props, void> {
     /**
      * Custom style applied to the card.
      */
-    cardStyle: View.propTypes.style,
+    cardStyle: ViewPropTypes.style,
 
     /**
      * Direction of the cards movement. Value could be `horizontal` or
@@ -190,7 +190,7 @@ class NavigationCardStack extends React.Component<DefaultProps, Props, void> {
     /**
      * Custom style applied to the cards stack.
      */
-    style: View.propTypes.style,
+    style: ViewPropTypes.style,
   };
 
   static defaultProps: DefaultProps = {
